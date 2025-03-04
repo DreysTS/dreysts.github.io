@@ -1,0 +1,57 @@
+@use "../abstracts/colors" as *;
+@use "sass:color";
+
+:root {
+	--accent-color: #{$accent-red};
+
+	--background-color: #{$primary-white};
+	--text-color: #{$primary-dark-gray};
+	--text-muted-color: #{$secondary-gray};
+
+	--text-color: #{$primary-black};
+
+	--header-logo-color: #{$primary-dark-gray};
+
+	--search-background-color: #{$primary-white};
+	--search-border-color: #{$primary-light-gray};
+	--search-placeholder-color: #{$secondary-gray};
+	--search-color: #{$primary-dark-gray};
+
+	--button-background-color: #{$secondary-white};
+	--button-background-active-color: #f3f3f3;
+	--button-icon-color: #{$primary-black};
+
+	--pagination-color: #{$primary-dark-gray};
+	--pagination-underline-color: #{$secondary-gray};
+	--pagination-active: #{color.scale($primary-dark-gray, $alpha: -95%)};
+}
+
+.dark-theme {
+	--accent-color: #{$accent-gold};
+
+	--background-color: #{$primary-black};
+	--text-color: #{$primary-light-gray};
+	--text-muted-color: #{$secondary-gray};
+
+	--text-color: #{$primary-white};
+
+	--header-logo-color: #{$primary-light-gray};
+
+	--search-background-color: #{$secondary-black};
+	--search-border-color: #{$secondary-black};
+	--search-placeholder-color: #{$primary-dark-gray};
+	--search-color: #{$primary-light-gray};
+
+	--button-background-color: #{$secondary-black};
+	--button-background-active-color: #1b1b1b;
+	--button-icon-color: #{$primary-light-gray};
+
+	--pagination-color: #{$primary-light-gray};
+	--pagination-underline-color: #{$primary-dark-gray};
+	--pagination-active: #{$secondary-black};
+}
+
+body {
+	background-color: var(--background-color);
+	color: var(--text-color);
+}

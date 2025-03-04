@@ -1,0 +1,20 @@
+@use "../base/typography" as *;
+@use "../abstracts/breakpoints" as *;
+
+.gallery__error {
+	margin-top: 60px;
+    @include tablet {
+        text-align: center
+    }
+	&-title {
+		@include paragraph-big;
+		color: var(--text-color);
+		margin-bottom: 12px;
+		&-query {
+			@include paragraph-big-medium;
+		}
+	}
+	&-subtitle {
+		color: var(--text-muted-color);
+	}
+}

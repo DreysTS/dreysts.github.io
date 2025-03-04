@@ -1,0 +1,29 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/breakpoints" as *;
+
+.gallery {
+	width: 100%;
+
+	.container {
+		@include container {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+
+	&__wrapper {
+		margin-top: 20px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 20px;
+		@include tablet {
+			display: grid;
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+
+		@include desktop {
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+		}
+	}
+}

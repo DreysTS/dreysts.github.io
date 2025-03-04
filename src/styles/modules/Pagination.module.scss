@@ -1,0 +1,13 @@
+@use "../abstracts/breakpoints" as *;
+
+.pagination {
+	margin-inline: auto;
+	margin-top: 32px;
+	margin-bottom: 80px;
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	@include tablet {
+		margin-top: 40px;
+	}
+}

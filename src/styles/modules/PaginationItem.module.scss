@@ -1,0 +1,36 @@
+@use "../base/typography" as *;
+
+.pagination__item {
+	&[arrow] {
+		fill: var(--pagination-color);
+		height: 20px;
+		border-radius: 4px;
+		&:not([disabled]):hover {
+			background-color: var(--pagination-active);
+		}
+		&[disabled] {
+			opacity: 0.5;
+			cursor: not-allowed;
+		}
+	}
+
+	&:not([arrow]) {
+		padding-inline: 8px;
+		padding-block: 2px;
+		color: var(--pagination-color);
+		border-bottom: 1px solid transparent;
+		@include paragraph-big;
+		&:not(.active, [disabled]):hover {
+			border-bottom: 1px solid var(--pagination-underline-color);
+			@include paragraph-big-medium;
+		}
+		&.active {
+			background-color: var(--pagination-active);
+			border-radius: 4px;
+		}
+		&[disabled] {
+			opacity: 0.5;
+			cursor: not-allowed;
+		}
+	}
+}

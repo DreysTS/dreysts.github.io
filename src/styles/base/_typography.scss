@@ -1,0 +1,56 @@
+body {
+	font-family: "Inter", serif;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 19.6px;
+}
+
+h1,
+h2 {
+	font-family: "Cormorant SC", serif;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+@mixin h1 {
+	font-family: "Cormorant SC", serif;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 16px;
+	line-height: 19.38px;
+}
+
+@mixin h2 {
+	font-family: "Cormorant SC", serif;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 14.53px;
+}
+
+@mixin paragraph-big {
+	font-size: 16px;
+	line-height: 22.4px;
+}
+
+@mixin paragraph-big-medium {
+	font-size: 16px;
+	font-weight: 500;
+}
+
+@mixin paragraph-small {
+	font-size: 12px;
+	line-height: 16.8px;
+}
+
+@mixin caption {
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 14.52px;
+}
+
+@mixin caption-small {
+	font-weight: 700;
+	font-size: 8px;
+	line-height: 9.68px;
+}

@@ -1,0 +1,31 @@
+@use "./variables";
+
+@mixin mobile {
+	@media (width >= variables.$mobile) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media (width >= variables.$tablet) {
+		@content;
+	}
+}
+
+@mixin laptop {
+	@media (width >= variables.$laptop) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media (width >= variables.$desktop) {
+		@content;
+	}
+}
+
+@mixin extra {
+	@media (width >= variables.$extra) {
+		@content;
+	}
+}
