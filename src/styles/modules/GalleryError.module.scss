@@ -3,9 +3,9 @@
 
 .gallery__error {
 	margin-top: 60px;
-    @include tablet {
-        text-align: center
-    }
+	@include tablet {
+		text-align: center;
+	}
 	&-title {
 		@include paragraph-big;
 		color: var(--text-color);
