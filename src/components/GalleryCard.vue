@@ -21,7 +21,7 @@ function handleImageError(e: Event) {
 
 	setTimeout(() => {
 		img.src = `${props.painting.imageUrl}?retry=${Date.now()}`;
-	}, 0);
+	}, 100);
 }
 </script>
 
